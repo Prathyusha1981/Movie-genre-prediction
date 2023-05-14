@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Movie genre Prediction</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,intitialscale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+	
+	.vertical-center{
+		margin:0;
+		position:center;
+		top:70%
+		color:rgb(57,8,235);
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+	<h1><a href="/">Movie Genre Predictor</a></h1>
+	<p>Based on the story of the movie,we will predict its Genre.</p>
+	</div>
+</div>
+<div class="vertical-center">
+{% if prediction==0 %}
+<h1>Prediction Genere:Thriller</h1>
+{% elif prediction==1 %}
+<h1>Prediction Genere:Comedy</h1>
+{% elif prediction==2 %}
+<h1>Prediction Genere:Drama</h1>
+{% elif prediction==3 %}
+<h1>Prediction Genere:Action</h1>
+{% elif prediction==4 %}
+<h1>Prediction Genere:Science Fiction(Sci-fi)</h1>
+{% elif prediction==5 %}
+<h1>Prediction Genere:other</h1>
+{% elif prediction==6 %}
+<h1>Prediction Genere:Romance</h1>
+{% elif prediction==7 %}
+<h1>Prediction Genere:Horror</h1>
+{% elif prediction==8 %}
+<h1>Prediction Genere:Adventure</h1>
+{% endif %}
+</div>
+</body>
+</html>

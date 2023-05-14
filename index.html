@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Genre Prediction</title>
+<meta charecter="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+textarea{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.registerbtn{
+	
+background-color:#FFFFFF
+color:white;
+padding:10px 20px;
+margin:8px 0;
+width:100%;
+opacity:0.9;
+position:center;
+}
+
+.registerbtn:hover{
+	opacity:1;
+}
+input[type=submit]:hover{
+	backgrund-color:#C3515A;
+}
+.vertical-center{
+	margin:0;
+	position:center;
+	top:70%;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+	<div class="jumbotron">
+	<h1><a href="/">Movie Genre Predictor</a></h1>
+	<p>Based on the story of the movie,we will predict its Genre.</p>
+	</div>
+	</div>
+	<div class="vertical-center">
+	<form action="/predict" method="POST">
+		<textarea name="message" rows="15" cols="95" placeholder="Enter the movie story..."></textarea>
+		<button type="submit" class="registerbtn">Predict</button>
+	</form>
+	</div>
+
+</body>
+</html>
